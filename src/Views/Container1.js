@@ -19,6 +19,18 @@ function Container1() {
     setShowInputs(!showInputs);
   };
 
+  const styles = {
+    textField: {
+      '& .MuiInput-underline:before': {
+        border: 'none',
+      },
+      '& .MuiInput-underline:after': {
+        border: 'none',
+      },
+    },
+  };
+  
+
   return (
     
     <div className='main-center'>
@@ -34,13 +46,12 @@ function Container1() {
         <div className='tour_search_wrapper'>
           <div style={{ display: 'flex', alignItems: 'start', gap: '10px' }} className='cc'>
             <div className="one_fourth themeborder">
-              <TextField className='keyword'   variant="outlined" placeholder="Destination, city" style={{backgroundColor:'#fff', border:'none'}}
+              <TextField  className={styles.textField} variant="outlined" placeholder="Destination, city" style={{backgroundColor:'#fff'}}
                 InputProps={{
                   endAdornment: (
                     <SearchIcon className='Search-icon'  style={{ fontSize:'19px'}}/>
                   ),
-                }}
-              />
+                }}/>
 
             </div>
 

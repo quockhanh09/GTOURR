@@ -47,7 +47,7 @@
             background-color: #fff;
             float: left;
             border: 2px solid #ffffff;
-            border-radius: 6px;
+            border-radius: 5px;
             margin-bottom: 2%;
             margin-left: 12px;
            
@@ -146,7 +146,9 @@
     font-size: 10px;
 }
 
-
+.keyword{
+   border: 1px solid #fff;
+}
 
 // @media (max-width: 390px) {
 //     .main-center {
